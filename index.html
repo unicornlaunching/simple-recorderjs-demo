@@ -35,6 +35,17 @@ VO:
     <div id="formats">Format: start recording to see sample rate</div>
   	<p><strong>Recordings:</strong></p>
   	<ol id="recordingsList"></ol>
+  
+  
+     <div>
+            <form name="inputFileMedia" method="post" enctype="multipart/form-data">
+              <div class="form-group">
+                <label for="songImport">Name(.mp3)<span class="setCorlorRed">*</span> :</label>
+                <div id="spaceInputSong">
+                  <input type="file" class="form-control" rows="5" name="songImport" required id="fileSong" accept="audio/*">
+                </div>
+
+              </div>
     <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
   	<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
   	<script src="js/app.js"></script>
